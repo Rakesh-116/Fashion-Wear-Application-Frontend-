@@ -18,6 +18,10 @@ import navigation from './NavigationData'
 import { Avatar, Button, Menu, MenuItem } from '@mui/material'
 import { deepPurple } from '@mui/material/colors'
 
+function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+}
+
 export default function Navigation() {
     const [open, setOpen] = useState(false)
 
